@@ -11,7 +11,7 @@ driver.get('https://www.google.com/')
 
 search = driver.find_element(By.NAME, 'q')
 search.clear()
-search.send_keys('smar twath')
+search.send_keys('smart watch')
 
 # wait for 4 sec
 sleep(4)
@@ -20,7 +20,8 @@ sleep(4)
 driver.find_element(By.NAME, 'btnK').click()
 
 # verify
-assert 'smar twath' in driver.current_url.lower(), f"Expected query not in {driver.current_url.lower()}"
+def verify_found_results_text(context, search_word):
+    assert search_word.lower() in context.driver.current_url.lower(), f"Expected query not in {context.driver.current_url.lower()}"
 print('Test Passed')
 
 driver.quit()
