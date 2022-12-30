@@ -160,28 +160,53 @@ import time
 # 21.Ask the user to enter their favorite color. If they enter “red”,
 # “RED” or “Red” display the message “I like red too”, otherwise display the message
 # “I don’t like [color], I prefer red”.
-color = input('Enter your favorite color: ')
-# if color == 'RED' or color == 'Red':
-if color.lower() == 'red':
-    print('I like red too')
-else:
-    print('I don’t like ' + color + ', I prefer Red. ')
+# color = input('Enter your favorite color: ')
+# # if color == 'RED' or color == 'Red':
+# if color.lower() == 'red':
+#     print('I like red too')
+# else:
+#     print(f'I don’t like {color} , I prefer Red. ')
 
 
 # 22.Ask the user’s age. If they are 18 or over, display the message
-# “You can vote”, if they are aged 17, display the message “You can learn to drive”, if they are 16, display the message “You can buy a lottery ticket”, if they are under 16, display the message “You can go Trickor-Treating”.
-
-
-
+# “You can vote”, if they are aged 17, display the message “You can learn to drive”,
+# if they are 16, display the message “You can buy a lottery ticket”, if they are under 16,
+# display the message “You can go Trickor-Treating”.
+# age = int(input('What is your age? '))
+# if age >= 18:
+#     print('You can vote')
+# elif age == 17:
+#     print('You can learn to drive')
+# elif age == 16:
+#     print('You can buy a lottery ticket')
+# else:
+#     print('You can go Trickor-Treating')
 
 
 #23. Ask the user to enter a number. If it is under 10,
 # display the message “Too low”, if their number is between 10 and 20,
 # display “Correct”, otherwise display “Too high”.
 
+# number = int(input('What is your number? '))
+# if number < 10:
+#     print('Too low')
+# # elif number => 10 and number <= 20:
+# elif 10 <= number <= 20:
+#     print('Correct')
+# else:
+#     print('Too high')
 
 
 #24. Ask the user to enter 1, 2, or 3. If they enter a 1, display the message “Thank you”,
 # if they enter a 2, display “Well done”, if they enter a 3, display “Correct”.
 # If they enter anything else, display “Error message”.
 
+number = int(input('Enter 1, 2, or 3: '))
+if number == 1:
+    print('Thank you')
+elif number == 2:
+    print('Well done')
+elif number == 3:
+    print('Correct')
+else:
+    print('Error message')
