@@ -1,12 +1,13 @@
 from selenium.webdriver.common.by import By
-from time import sleep
-from selenium.webdriver.common.keys import Keys
 from behave import given, when, then
+from time import sleep
 
+from selenium.webdriver.common.keys import Keys
 
 SEARCH_INPUT = (By.ID, 'twotabsearchtextbox')
 SEARCH_SUBMIT = (By.XPATH, "//input[@value ='Go']")
 RESLTS_INFO_TEXT = (By.XPATH, "//span[@class ='a-color-state a-text-bold']")
+
 
 
 @given('Open Amazon page')
@@ -19,13 +20,13 @@ def input_search(context, search_word):
     search = context.driver.find_element(*SEARCH_INPUT)
     search.clear()
     search.send_keys(search_word)
-    sleep(4)
+
 
 
 @when('Click to search')
 def click_search_icon(context):
     context.driver.find_element(*SEARCH_SUBMIT).click()
-    sleep(2)
+
 
 
 @then('Product results for {search_word} are shown')
