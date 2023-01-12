@@ -1,0 +1,9 @@
+# pack-refs with: peeled fully-peeled sorted 
+9d92732b4122be46f3bd229439b8005438514e26 refs/heads/group12-lesson3
+fdf07f42b6c62273f1f89d64e3a5021dda536d0e refs/heads/group12-lesson4
+ab35c8b58a5b235c7ae305bd9545d198aaf716e4 refs/heads/group12-lesson5
+bb21634bfdf22abd0d0164747c195b439ed11693 refs/heads/group12-lesson7
+d1891b35cbeec991c8c026c58da7664a6f4da742 refs/heads/group12-lesson8
+d931fb805ab59b67d6403d36147c6730c1137a89 refs/heads/master
+4a85f8296100e321d5d85aed88b0862f62cdcb19 refs/heads/slevinsohn/update-readme
+916cf7d216c6888ce23056101d66495e889e9caf refs/heads/wikipedia_jenkins_demo
