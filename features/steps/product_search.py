@@ -6,7 +6,7 @@ from behave import given, when, then
 
 SEARCH_INPUT = (By.ID, 'twotabsearchtextbox')
 SEARCH_SUBMIT = (By.XPATH, "//input[@value ='Go']")
-RESLTS_INFO_TEXT = (By.XPATH, "//span[@class ='a-color-state a-text-bold']")
+RESLTS_INFO_TEXT = (By.CSS_SELECTOR, ".a-color-state.a-text-bold")
 
 
 @given('Open Amazon page')
