@@ -1,5 +1,6 @@
 Feature: Test Scenarios for Search functionality
 
+  #noinspection CucumberUndefinedStep
   Scenario: User can search for a product
     Given Open Amazon page
     When Input Dress into search field
